@@ -1,21 +1,21 @@
 :root {
   /* Colors */
-  --color-primary: #a8abab;
-  --color-primary-dark: #a8abab80;
-  --color-accent: #ef8fa1;
-  --color-accent-dark: #ef8fa0be;
+  --color-primary: hsl(220, 65%, 18%);
+  --color-primary-dark: hsl(220, 65%, 12%);
+  --color-accent: hsl(38, 85%, 50%);
+  --color-accent-dark: hsl(38, 85%, 38%);
 
-  --color-text: #fbb910;
-  --color-text-muted: #fecd50;
+  --color-text: hsl(220, 12%, 80%);
+  --color-text-muted: hsl(220, 65%, 18%);
 
-  --color-bg: #374250;
-  --color-surface: #374250;
+  --color-bg: hsl(220, 30%, 15%);
+  --color-surface: hsl(220, 30%, 28%);
   --color-whatsapp: #25d366;
 
 
   /* Typography */
-  --font-sans: sans-serif;
-  --font-heading: serif sans-serif;
+  --font-sans: 'Outfit', sans-serif;
+  --font-heading: 'Cormorant Garamond', serif;
 
   --fs-sm: 0.875rem;
   --fs-base: 1rem;
@@ -56,9 +56,9 @@
   --radius-lg: 20px;
   --radius-full: 9999px;
 
-  --shadow-sm: 
+  /* --shadow-sm: 
   --shadow-md:
-  --shadow-lg:
+  --shadow-lg: */
 }
 
 *, *::before, *::after {
