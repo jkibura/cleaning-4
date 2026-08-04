@@ -1,3 +1,4 @@
+import type { LucideIcon } from "lucide-react"
 
 export interface navLink {
     label: string
@@ -11,6 +12,7 @@ export interface NavLinks {
 }
 
 
+// Hero Content
 export interface CTALink {
     label: string
     href: string
@@ -30,6 +32,7 @@ export interface HeroContent {
 }
 
 
+// TrustBar Content
 export interface TrustStat {
     value: string
     label: string
@@ -38,4 +41,20 @@ export interface TrustStat {
 export interface TrustBarContent {
     heading?: string
     stats: TrustStat[]
+}
+
+
+// Services Content
+export interface ServiceContent {
+    id: string
+    icon: LucideIcon
+    title: string
+    description: string
+    price?: string
+    popular?: boolean
+}
+
+export interface ServicesContent {
+    heading?: string
+    services: ServiceContent[]
 }

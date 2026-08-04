@@ -1,5 +1,6 @@
 import heroImg from '../assets/hero.png'
-import type { NavLinks, HeroContent, TrustBarContent } from '../types/index';
+import type { NavLinks, HeroContent, TrustBarContent, ServicesContent } from '../types/index';
+import { Home, Sparkles, WashingMachine, Car, Warehouse, ShieldCheck } from 'lucide-react';
 
 export const navLinks: NavLinks = {
     home: {
@@ -40,10 +41,10 @@ export const trustBarContent: TrustBarContent = {
     stats: [
         {
             value: '4.9/5',
-            label: 'Avrage Client Rating'
+            label: 'Average Client Rating'
         },
         {
-            value: '2000+',
+            value: '2,000+',
             label: 'Homes Transformed'
         },
         {
@@ -53,6 +54,55 @@ export const trustBarContent: TrustBarContent = {
         {
             value: '100%',
             label: 'Satisfaction Guarantee'
+        }
+    ]
+}
+
+export const servicesContent: ServicesContent = {
+    heading: 'Our Services',
+    services: [
+        {
+            id: '1',
+            icon: Home,
+            title: 'Residential',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.',
+            price: 'from $129',
+            popular: true
+        },
+        {
+            id: '2',
+            icon: Sparkles,
+            title: 'Deep Cleaning',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.',
+            price: 'from $99'
+        },
+        {
+            id: '3',
+            icon: WashingMachine,
+            title: 'Commercial / Laundry',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.',
+            price: 'from $99'
+        },
+        {
+            id: '4',
+            icon: Car,
+            title: 'Car Detailing',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.',
+            price: 'from $99'
+        },
+        {
+            id: '5',
+            icon: Warehouse,
+            title: 'Post Construction',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.',
+            price: 'from $99'
+        },
+        {
+            id: '6',
+            icon: ShieldCheck,
+            title: 'Sanitization / Disinfection',
+            description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.',
+            price: 'from $99'
         }
     ]
 }

@@ -58,10 +58,11 @@
   --radius-lg: 20px;
   --radius-full: 9999px;
 
-  /* --shadow-sm: 
-  --shadow-md:
-  --shadow-lg: */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.18);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.22);
 
+  
   /* Transitions */
   --transition: 0.2s ease-in-out;
 }
