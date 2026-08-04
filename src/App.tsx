@@ -5,6 +5,7 @@ import Services from "./components/sections/Services/Services"
 import WhatsAppButton from "./components/ui/WhatsAppButton"
 import Footer from "./components/layout/Footer/Footer"
 import { heroContent, trustBarContent, servicesContent } from "./data/siteContent"
+import { whatsAppConfig } from "./config/site"
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Hero content={heroContent}/>
         <Trust content={trustBarContent} />
         <Services content={servicesContent}/>
-        <WhatsAppButton />
+        <WhatsAppButton content={whatsAppConfig}/>
       </main>
       <Footer />
     </>

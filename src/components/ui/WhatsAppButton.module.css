@@ -4,4 +4,22 @@
     right: 2rem;
     bottom: 2rem;
     z-index: 1000;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--color-whatsapp);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition);
+}
+
+.floating:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #fff;
 }

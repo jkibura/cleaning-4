@@ -13,7 +13,7 @@ const Services = ( { content }: ServicesProps) => {
         <div className={styles.cards}>
             {content.services.map(service => (
                 <div className={styles.service} key={service.id}>
-                    <div className={styles.icon}><service.icon /></div>
+                    <div className={styles.icon}><service.icon size={28}/></div>
                     <h3 className={styles.title}>{service.title}</h3>
                     <p className={styles.description}>{service.description}</p>
                     {service.price && (<p className={styles.price}>{service.price}</p>)}
