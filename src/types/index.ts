@@ -58,3 +58,11 @@ export interface ServicesContent {
     heading?: string
     services: ServiceContent[]
 }
+
+
+//WhatsApp 
+export interface WhatsAppConfig {
+    phoneNumber: string
+    message: string
+    label?: string
+}
