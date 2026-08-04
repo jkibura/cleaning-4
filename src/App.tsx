@@ -1,13 +1,21 @@
+import Header from "./components/layout/Header/Header"
 import Hero from "./components/sections/Hero/Hero"
-import { heroContent } from "./data/siteContent"
+import Trust from "./components/sections/Trust/Trust"
+import Services from "./components/sections/Services/Services"
+import Footer from "./components/layout/Footer/Footer"
+import { heroContent, trustBarContent, servicesContent } from "./data/siteContent"
 
 
 function App() {
   return (
     <>
+      <Header />
       <main>
         <Hero content={heroContent}/>
+        <Trust content={trustBarContent} />
+        <Services content={servicesContent}/>
       </main>
+      <Footer />
     </>
   )
 }

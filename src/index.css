@@ -12,7 +12,7 @@
   --color-surface: hsl(220, 30%, 28%);
   --color-whatsapp: #25d366;
 
-  --color-border: hsl(220, 15%, 20%); /* or ... 30%*/
+  --color-border: hsl(220, 15%, 30%); /* or ... 30%*/
 
 
   /* Typography */
@@ -110,11 +110,8 @@ button {
   background: var(--color-primary);
   color: var(--color-accent);
   border: none;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-full);
   padding: var(--space-2) var(--space-4);
+  transition: var(--transition);
 }
 
-.cta-btn {
-  background: var(--color-accent);
-  color: var(--color-primary);
-}
