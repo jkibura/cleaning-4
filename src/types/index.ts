@@ -1,6 +1,20 @@
 import type { LucideIcon } from "lucide-react"
 
+
+// Header Content
+export interface brand {
+    name?: string
+    logo?: string
+    span?: string
+    description?: string  //For footer
+    href: string
+}
 export interface navLink {
+    label: string
+    href: string
+}
+
+export interface CTALink {
     label: string
     href: string
 }
@@ -11,12 +25,15 @@ export interface NavLinks {
     services: navLink
 }
 
+export interface HeaderContent {
+    brand: brand
+    navLinks: NavLinks
+    cta: CTALink
+}
+
+
 
 // Hero Content
-export interface CTALink {
-    label: string
-    href: string
-}
 
 export interface HeroContent {
     eyebrow: string
@@ -65,4 +82,35 @@ export interface WhatsAppConfig {
     phoneNumber: string
     message: string
     label?: string
+}
+
+
+//Footer
+export interface contact {
+    office?: string
+    address?: string
+    email: string
+    phoneNumber: string
+}
+
+export interface socials {
+    facebook?: string
+    instagram?: string
+    twitter?: string
+    linkedin?: string
+    youtube?: string
+    pinterest?: string
+}
+
+export interface legal {
+    copyright: string
+    terms?: string
+    privacy?: string
+}
+
+export interface FooterContent {
+    brand: brand
+    contact: contact
+    socials: socials
+    legal: legal
 }
