@@ -1,0 +1,36 @@
+.faq {
+  padding: var(--container-pad);
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+}
+
+.header {
+  max-width: var(--container-max);
+  margin: 0 auto var(--space-8);
+  text-align: center;
+}
+
+.items {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.item {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.item summary {
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+  list-style: none;
+}
+
+.item p {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+}

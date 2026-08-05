@@ -20,9 +20,7 @@ export interface CTALink {
 }
 
 export interface NavLinks {
-    home: navLink
-    about: navLink
-    services: navLink
+    [key: string]: navLink
 }
 
 export interface HeaderContent {
@@ -30,7 +28,6 @@ export interface HeaderContent {
     navLinks: NavLinks
     cta: CTALink
 }
-
 
 
 // Hero Content
@@ -77,6 +74,69 @@ export interface ServicesContent {
 }
 
 
+export interface AboutContent {
+    eyebrow: string
+    heading: string
+    description: string
+    points: string[]
+    guarantee: string
+}
+
+export interface ProcessStep {
+    stage: string
+    title: string
+    description: string
+}
+
+export interface ProcessContent {
+    heading: string
+    steps: ProcessStep[]
+}
+
+export interface Testimonial {
+    quote: string
+    customer: string
+    location: string
+    rating: string
+}
+
+export interface TestimonialsContent {
+    heading: string
+    testimonials: Testimonial[]
+}
+
+export interface PricingPackage {
+    id: string
+    name: string
+    price: string
+    features: string[]
+    highlight?: boolean
+}
+
+export interface PricingContent {
+    heading: string
+    description: string
+    packages: PricingPackage[]
+}
+
+export interface FAQItem {
+    question: string
+    answer: string
+}
+
+export interface FAQContent {
+    heading: string
+    items: FAQItem[]
+}
+
+export interface ContactContent {
+    heading: string
+    description: string
+    phone: string
+    email: string
+    area: string
+}
+
 //WhatsApp 
 export interface WhatsAppConfig {
     phoneNumber: string
@@ -106,6 +166,8 @@ export interface legal {
     copyright: string
     terms?: string
     privacy?: string
+    termsHref?: string
+    privacyHref?: string
 }
 
 export interface FooterContent {

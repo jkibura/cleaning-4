@@ -1,0 +1,57 @@
+.testimonials {
+  padding: var(--container-pad);
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0));
+}
+
+.headingGroup {
+  max-width: var(--container-max);
+  margin: 0 auto var(--space-8);
+  text-align: center;
+}
+
+.headingGroup h2 {
+  font-size: clamp(2rem, 3vw, 2.7rem);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+}
+
+.quote {
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+.customer {
+  font-weight: var(--fw-bold);
+}
+
+.rating {
+  color: var(--color-accent);
+  font-weight: var(--fw-bold);
+}
+
+@media (max-width: 920px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

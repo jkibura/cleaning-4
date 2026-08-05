@@ -1,0 +1,51 @@
+.footer {
+  background: rgba(10, 15, 25, 0.96);
+  color: var(--color-text-muted);
+  padding: var(--space-12) var(--container-pad);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: var(--space-8);
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.brand strong {
+  color: var(--color-accent);
+  font-size: 1.15rem;
+}
+
+.links,
+.contact,
+.socials {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.socials a,
+.contact a,
+.links a {
+  color: var(--color-text-muted);
+}
+
+.copy {
+  margin-top: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: var(--space-6);
+  text-align: center;
+  font-size: var(--fs-sm);
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
