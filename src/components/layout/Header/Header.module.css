@@ -2,7 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(10, 15, 25, 0.94);
+  /* background: rgba(10, 15, 25, 0.94); */
+  
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
@@ -10,11 +11,12 @@
   justify-content: space-between;
   gap: var(--space-4);
   padding: var(--space-4) var(--container-pad);
+  height: var(--nav-height);
 }
 
 .brand {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
+  font-size: var(--fs-bs);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-accent);
@@ -58,13 +60,17 @@
 .mobileNav {
   display: none;
   position: absolute;
-  inset: 0 auto auto 0;
-  right: var(--container-pad);
-  top: 100%;
-  width: min(90vw, 320px);
-  margin-top: var(--space-4);
-  background: rgba(10, 15, 25, 0.98);
-  border-radius: var(--radius-lg);
+  /* inset: 0 auto auto 0; */
+  inset: 0 0 auto 0;
+  /* right: var(--container-pad); */
+  top: var(--nav-height);
+  /* width: min(90vw, 320px); */
+  width: 100%;
+  /* margin-top: var(--space-4); */
+  /* background: rgba(10, 15, 25, 0.98); */
+  background: var(--color-surface);
+
+  border-radius: var(--radius-sm);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: var(--shadow-lg);
   padding: var(--space-6);
@@ -75,7 +81,7 @@
   gap: var(--space-4);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .nav {
     display: none;
   }

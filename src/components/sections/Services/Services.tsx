@@ -7,7 +7,7 @@ export interface ServicesProps {
 
 const Services = ( { content }: ServicesProps) => {
   return (
-    <div className={styles.services}>
+    <section id="services"className={styles.services}>
         {content.heading && (<h2 className={styles.heading}>{content.heading}</h2>)}
 
         <div className={styles.cards}>
@@ -21,7 +21,7 @@ const Services = ( { content }: ServicesProps) => {
                 </div>
             ))}
         </div>
-    </div>
+    </section>
   )
 }
 

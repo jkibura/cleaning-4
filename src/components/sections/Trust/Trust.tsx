@@ -7,7 +7,7 @@ export interface TrustProps {
 
 function Trust ( { content } : TrustProps ) {
     return (
-        <div className={styles.trust}>
+        <section className={styles.trust}>
             {content.heading && (
                 <h2 className={styles.heading}>{content.heading}</h2>
             )}
@@ -19,7 +19,7 @@ function Trust ( { content } : TrustProps ) {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     )
 }
 
