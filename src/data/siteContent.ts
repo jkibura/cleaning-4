@@ -1,4 +1,6 @@
-import heroImg from '../assets/clean-unsplash.jpg'
+// import heroImg from '../assets/clean-unsplash.jpg'
+import heroImg from '/images/clean-home.jpg'
+
 import type {
   NavLinks,
   HeaderContent,
@@ -14,6 +16,7 @@ import type {
   ContactContent,
 } from '../types/index'
 import { Home, Sparkles, WashingMachine, Warehouse, ShieldCheck } from 'lucide-react'
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa'
 
 export const navLinks: NavLinks = {
   home: {
@@ -165,10 +168,33 @@ export const footerContent: FooterContent = {
     address: 'Serving South Florida communities',
   },
   socials: {
-    facebook: 'https://www.facebook.com/HarborCityEliteCleaning',
-    instagram: 'https://www.instagram.com/harborcityeliteclean',
-    linkedin: 'https://www.linkedin.com/company/harbor-city-elite-cleaning',
+    // facebook: 'https://www.facebook.com/HarborCityEliteCleaning',
+    // instagram: 'https://www.instagram.com/harborcityeliteclean',
+    // linkedin: 'https://www.linkedin.com/company/harbor-city-elite-cleaning',
+    // youtube: 'https://www.youtube.com/@harborcityelitecleaning',
+
+    facebook: {
+      icon: FaFacebook,
+      href: 'https://www.facebook.com/HarborCityEliteCleaning',
+      arialabel: 'Facebook',
+    },
+    instagram: {
+      icon: FaInstagram,
+      href: 'https://www.instagram.com/harborcityeliteclean',
+      arialabel: 'Instagram',
+    },
+    linkedin: {
+      icon: FaLinkedin,
+      href: 'https://www.linkedin.com/company/harbor-city-elite-cleaning',
+      arialabel: 'LinkedIn',
+    },
+    youtube: {
+      icon: FaYoutube,
+      href: 'https://www.youtube.com/@harborcityelitecleaning',
+      arialabel: 'YouTube',
+    },
   },
+
   legal: {
     copyright: '© 2026 Harbor City Elite Cleaning. All rights reserved.',
     terms: 'Terms & Conditions',

@@ -1,5 +1,5 @@
+import type { IconType } from "react-icons"
 import type { LucideIcon } from "lucide-react"
-
 
 // Header Content
 export interface brand {
@@ -134,7 +134,7 @@ export interface ContactContent {
     description: string
     phone: string
     email: string
-    area: string
+    area?: string
 }
 
 //WhatsApp 
@@ -146,6 +146,12 @@ export interface WhatsAppConfig {
 
 
 //Footer
+export interface SocialLink {
+    icon: IconType
+    href: string
+    arialabel?: string
+}
+
 export interface contact {
     office?: string
     address?: string
@@ -154,12 +160,12 @@ export interface contact {
 }
 
 export interface socials {
-    facebook?: string
-    instagram?: string
-    twitter?: string
-    linkedin?: string
-    youtube?: string
-    pinterest?: string
+    facebook?: SocialLink
+    instagram?: SocialLink
+    twitter?: SocialLink
+    linkedin?: SocialLink
+    youtube?: SocialLink
+    pinterest?: SocialLink
 }
 
 export interface legal {
