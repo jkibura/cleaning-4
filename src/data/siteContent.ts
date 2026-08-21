@@ -154,53 +154,6 @@ export const servicesContent: ServicesContent = {
   ],
 }
 
-export const footerContent: FooterContent = {
-  brand: {
-    name: 'Harbor City Elite Cleaning',
-    href: '#home',
-    description:
-      'South Florida’s luxury cleaning partner for homes, offices, and rentals with insured teams and a satisfaction guarantee.',
-  },
-  contact: {
-    office: 'Miami, FL',
-    phoneNumber: '+15551234567',
-    email: 'hello@harborcityclean.com',
-    address: 'Serving South Florida communities',
-  },
-  socials: {
-    // facebook: 'https://www.facebook.com/HarborCityEliteCleaning',
-    // instagram: 'https://www.instagram.com/harborcityeliteclean',
-    // linkedin: 'https://www.linkedin.com/company/harbor-city-elite-cleaning',
-    // youtube: 'https://www.youtube.com/@harborcityelitecleaning',
-
-    facebook: {
-      icon: FaFacebook,
-      href: 'https://www.facebook.com/HarborCityEliteCleaning',
-      arialabel: 'Facebook',
-    },
-    instagram: {
-      icon: FaInstagram,
-      href: 'https://www.instagram.com/harborcityeliteclean',
-      arialabel: 'Instagram',
-    },
-    linkedin: {
-      icon: FaLinkedin,
-      href: 'https://www.linkedin.com/company/harbor-city-elite-cleaning',
-      arialabel: 'LinkedIn',
-    },
-    youtube: {
-      icon: FaYoutube,
-      href: 'https://www.youtube.com/@harborcityelitecleaning',
-      arialabel: 'YouTube',
-    },
-  },
-
-  legal: {
-    copyright: '© 2026 Harbor City Elite Cleaning. All rights reserved.',
-    terms: 'Terms & Conditions',
-    privacy: 'Privacy Policy',
-  },
-}
 
 export const aboutContent: AboutContent = {
   eyebrow: 'Premium care, trusted teams',
@@ -224,7 +177,7 @@ export const processContent: ProcessContent = {
       stage: 'Book',
       title: 'Select your premium clean',
       description:
-        'Choose a package, share your details, and pick a convenient date for your service.',
+      'Choose a package, share your details, and pick a convenient date for your service.',
     },
     {
       stage: 'Clean',
@@ -246,7 +199,7 @@ export const testimonialsContent: TestimonialsContent = {
   testimonials: [
     {
       quote:
-        'Harbor City Elite Cleaning consistently delivers a flawless experience. Our rental property has never looked better.',
+      'Harbor City Elite Cleaning consistently delivers a flawless experience. Our rental property has never looked better.',
       customer: 'Sofia R.',
       location: 'Fort Lauderdale',
       rating: '★★★★★',
@@ -271,7 +224,7 @@ export const testimonialsContent: TestimonialsContent = {
 export const pricingContent: PricingContent = {
   heading: 'Packages with clear value',
   description:
-    'Select a package that fits your property and lifestyle. Every service includes premium products and our satisfaction guarantee.',
+  'Select a package that fits your property and lifestyle. Every service includes premium products and our satisfaction guarantee.',
   packages: [
     {
       id: 'signature',
@@ -331,7 +284,7 @@ export const faqContent: FAQContent = {
     {
       question: 'Do you bring your own cleaning supplies?',
       answer:
-        'Yes. We bring premium, eco-conscious products and can also accommodate your preferred supplies.',
+      'Yes. We bring premium, eco-conscious products and can also accommodate your preferred supplies.',
     },
     {
       question: 'What if I’m not satisfied with the service?',
@@ -344,8 +297,56 @@ export const faqContent: FAQContent = {
 export const contactContent: ContactContent = {
   heading: 'Ready to book your premium clean?',
   description:
-    'Request a quote, schedule a service, or speak with our concierge team for custom South Florida cleaning.',
+  'Request a quote, schedule a service, or speak with our concierge team for custom South Florida cleaning.',
   phone: '+15551234567',
   email: 'hello@harborcityclean.com',
   area: 'Serving Miami, Fort Lauderdale, Palm Beach, and surrounding communities',
+}
+
+export const footerContent: FooterContent = {
+  brand: {
+    name: 'Harbor City Elite Cleaning',
+    href: '#home',
+    description:
+      'South Florida’s luxury cleaning partner for homes, offices, and rentals with insured teams and a satisfaction guarantee.',
+  },
+  contact: {
+    office: 'Miami, FL',
+    phoneNumber: '+15551234567',
+    email: 'hello@harborcityclean.com',
+    address: 'Serving South Florida communities',
+  },
+  socials: {
+    // facebook: 'https://www.facebook.com/HarborCityEliteCleaning',
+    // instagram: 'https://www.instagram.com/harborcityeliteclean',
+    // linkedin: 'https://www.linkedin.com/company/harbor-city-elite-cleaning',
+    // youtube: 'https://www.youtube.com/@harborcityelitecleaning',
+
+    facebook: {
+      icon: FaFacebook,
+      href: 'https://www.facebook.com/HarborCityEliteCleaning',
+      arialabel: 'Facebook',
+    },
+    instagram: {
+      icon: FaInstagram,
+      href: 'https://www.instagram.com/harborcityeliteclean',
+      arialabel: 'Instagram',
+    },
+    linkedin: {
+      icon: FaLinkedin,
+      href: 'https://www.linkedin.com/company/harbor-city-elite-cleaning',
+      arialabel: 'LinkedIn',
+    },
+    youtube: {
+      icon: FaYoutube,
+      href: 'https://www.youtube.com/@harborcityelitecleaning',
+      arialabel: 'YouTube',
+    },
+  },
+
+  legal: {
+    copyright: '© 2026 Harbor City Elite Cleaning. All rights reserved.',
+    terms: 'Terms & Conditions',
+    privacy: 'Privacy Policy',
+  },
 }

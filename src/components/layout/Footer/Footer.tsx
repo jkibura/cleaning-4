@@ -23,9 +23,9 @@ const Footer = ({ content }: FooterProps) => {
 
         <div className={styles.socials}>
           <p><strong>Follow</strong></p>
-          {content.socials.facebook && <a href={content.socials.facebook} target="_blank" rel="noreferrer">Facebook</a>}
-          {content.socials.instagram && <a href={content.socials.instagram} target="_blank" rel="noreferrer">Instagram</a>}
-          {content.socials.linkedin && <a href={content.socials.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>}
+          {content.socials.facebook && <a href={content.socials.facebook.href} target="_blank" rel="noreferrer">Facebook</a>}
+          {content.socials.instagram && <a href={content.socials.instagram.href} target="_blank" rel="noreferrer">Instagram</a>}
+          {content.socials.linkedin && <a href={content.socials.linkedin.href} target="_blank" rel="noreferrer">LinkedIn</a>}
         </div>
       </div>
       <p className={styles.copy}>{content.legal.copyright}</p>
